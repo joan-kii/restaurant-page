@@ -1,11 +1,14 @@
 import {content} from './index';
 
 export function home() {
-    let homeContent = document.createElement('div');
+    let homeTitle = document.createElement('h1');
+    homeTitle.className = 'homeTitle';
+    homeTitle.innerText = 'Welcome to Six Guys!';
+
+    let homeContent = document.createElement('p');
     homeContent.className = 'homeContent';
-    homeContent.innerText = 'Just like Five Guys but better. One more guy, makes the difference.';
+    homeContent.innerText = '"Just like Five Guys, but better.\n One more guy, makes the difference."';
+
+    content.appendChild(homeTitle);
     content.appendChild(homeContent);
 };
-
-
-<h1>Welcome to Six Guys</h1>
