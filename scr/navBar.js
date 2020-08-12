@@ -9,18 +9,22 @@ export function navBar() {
 
     const logo = document.createElement('a');
     logo.className = 'logo';
+    logo.id = 'logo';
     logo.textContent = 'SIX GUYS';
 
     const menu = document.createElement('a');
-    menu.className ='menu';
+    menu.className = 'menu';
+    menu.id = 'menu';
     menu.textContent = 'Menu';
 
     const about = document.createElement('a');
     about.className = 'about';
+    about.id = 'about';
     about.textContent = 'About Us';
 
     const contact = document.createElement('a');
     contact.className = 'contact';
+    contact.id = 'contact';
     contact.textContent = 'Contact';
 
     content.appendChild(topNav);
