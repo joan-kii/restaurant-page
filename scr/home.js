@@ -1,4 +1,4 @@
-import {content} from './index';
+import { content } from './index';
 
 export function home() {
     let homeTitle = document.createElement('h1');
