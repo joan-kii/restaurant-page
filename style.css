@@ -8,6 +8,9 @@ body {
     background-color: whitesmoke;
     top: 150px;
     left: 0px;
+}
+
+.divHome {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: 530px;
@@ -22,7 +25,6 @@ body {
     margin: 30px;
     background-image: url('../scr/images/six-guys-burguer.jpg');
     background-repeat: no-repeat;
-    background-attachment: relative;
     background-size: cover;
     color: whitesmoke;
     font-size: 50px;
@@ -52,8 +54,13 @@ a {
     color: #CF152D;
     font-weight: bolder;
     margin: 5px 20px;
-    padding: 5px;
+    padding: 5px 10px;
     cursor: pointer;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: #CF152D;
 }
 
 .link {
@@ -107,7 +114,7 @@ a {
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .divContent {
         display: flex;
         flex-direction: column;
@@ -125,5 +132,14 @@ a {
         width: 60%;
         padding: 60px;
         flex-basis: auto;
+    }
+
+    .navBar {
+        flex-direction: column;
+        height: 80px;
+      }
+
+    .linkNav {
+        font-size: 15px;
     }
 }
