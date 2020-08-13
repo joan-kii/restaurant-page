@@ -1,4 +1,4 @@
-import { content } from './index';
+import { mainContent } from './index';
 
 export function home() {
     const divHome = document.createElement('div');
@@ -12,7 +12,7 @@ export function home() {
     homeContent.className = 'homeContent';
     homeContent.innerText = '"Just like Five Guys, but better.\n One more guy, makes the difference."';
 
-    content.appendChild(divHome);
+    mainContent.appendChild(divHome);
     divHome.appendChild(homeTitle);
     divHome.appendChild(homeContent);
 };

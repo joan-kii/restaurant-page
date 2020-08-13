@@ -2,25 +2,30 @@ import { home } from './home';
 import { navBar } from './navBar';
 import { menu } from './menu';
 
-export const content = document.getElementById('content');
+const content = document.getElementById('content');
+export const navContent = document.createElement('div');
+navContent.id = 'navContent';
+export const mainContent = document.createElement('div');
+mainContent.id = 'mainContent';
+mainContent.className = 'mainContent';
+
+
+content.appendChild(navContent);
+content.appendChild(mainContent);
 
 navBar();
 home();
 
 const logoButton = document.getElementById('logo');
 logoButton.addEventListener('click', () => {
-    content.textContent = '';
-    navBar();
+    mainContent.textContent = '';
     home();
-    console.log('logo')
 });
 
 const menuButton = document.getElementById('menu');
 menuButton.addEventListener('click', () => {
-    content.textContent = '';
-    navBar();
+    mainContent.textContent = '';
     menu();
-    console.log('menu')
 });
 
 /* const aboutButton = document.getElementById('about');
@@ -35,4 +40,4 @@ contactButton.addEventListener('click', () => {
     content.textContent = '';
     navBar();
     contact();
-});/*  */
+});*/

@@ -1,4 +1,4 @@
-import { content } from './index'
+import { navContent } from './index'
 
 export function navBar() {
     const topNav = document.createElement('div');
@@ -27,7 +27,7 @@ export function navBar() {
     contact.id = 'contact';
     contact.textContent = 'Contact';
 
-    content.appendChild(topNav);
+    navContent.appendChild(topNav);
     topNav.appendChild(logo);
     linkNav.appendChild(contact);
     linkNav.appendChild(about);
