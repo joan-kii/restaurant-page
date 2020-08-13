@@ -1,14 +1,17 @@
 import { home } from './home';
 import { navBar } from './navBar';
 import { menu } from './menu';
+import { about } from './about';
+import { contact } from './contact'; 
 
 const content = document.getElementById('content');
+
 export const navContent = document.createElement('div');
 navContent.id = 'navContent';
+
 export const mainContent = document.createElement('div');
 mainContent.id = 'mainContent';
 mainContent.className = 'mainContent';
-
 
 content.appendChild(navContent);
 content.appendChild(mainContent);
@@ -28,16 +31,14 @@ menuButton.addEventListener('click', () => {
     menu();
 });
 
-/* const aboutButton = document.getElementById('about');
+const aboutButton = document.getElementById('about');
 aboutButton.addEventListener('click', () => {
-    content.textContent = '';
-    navBar();
+    mainContent.textContent = '';
     about();
 });
 
 const contactButton = document.getElementById('contact');
 contactButton.addEventListener('click', () => {
-    content.textContent = '';
-    navBar();
+    mainContent.textContent = '';
     contact();
-});*/
+});
