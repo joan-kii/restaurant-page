@@ -36,6 +36,14 @@ img {
     background-color: whitesmoke;
 }
 
+.divContact {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 530px;
+    grid-template-areas: 
+        "mapContact textContact";
+}
+
 .homeTitle {
     grid-area: homeTitle;
     text-align: center;
@@ -83,7 +91,7 @@ img {
     margin-top: 15px;
 }
 
-.imageAbout, .textAbout {
+.imageAbout, .textAbout, .textContact {
     display: inline-block;
     margin-left: 20%;
     margin-right: 20%;
@@ -92,6 +100,16 @@ img {
     text-align: center;
     color: #CF152D;
     font-weight: bold;
+}
+
+.textContact {
+    padding-top: 200px;
+}
+
+.mapContact {
+    grid-area: mapContact;
+    padding: 70px 0px;
+    padding-left: 200px;
 }
 
 .footerContent {
@@ -147,10 +165,18 @@ a:hover {
 }
 
 @media (max-width: 1300px) {
-    .divHome, .divMenu, .divAbout {
+    .divHome, .divMenu, .divAbout, .divContact {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .mapContact {
+        padding-left: 0px;
+    }
+
+    .textContact {
+        padding-top: 20px;
     }
 
     .homeTitle {

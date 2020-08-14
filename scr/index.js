@@ -25,6 +25,12 @@ logoButton.addEventListener('click', () => {
     home();
 });
 
+const homeButton = document.getElementById('home');
+homeButton.addEventListener('click', () => {
+    mainContent.textContent = '';
+    home();
+});
+
 const menuButton = document.getElementById('menu');
 menuButton.addEventListener('click', () => {
     mainContent.textContent = '';

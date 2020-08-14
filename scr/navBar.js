@@ -12,6 +12,11 @@ export function navBar() {
     logo.id = 'logo';
     logo.textContent = 'SIX GUYS';
 
+    const home = document.createElement('a');
+    home.className = 'home';
+    home.id = 'home';
+    home.textContent = 'Home';
+
     const menu = document.createElement('a');
     menu.className = 'menu';
     menu.id = 'menu';
@@ -32,5 +37,6 @@ export function navBar() {
     linkNav.appendChild(contact);
     linkNav.appendChild(about);
     linkNav.appendChild(menu);
+    linkNav.appendChild(home);
     topNav.appendChild(linkNav);
 };

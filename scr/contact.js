@@ -4,20 +4,19 @@ export function contact() {
     const divContact = document.createElement('div');
     divContact.className = 'divContact';
 
-    const mapContact = document.createElement('iframe');
-    mapContact.setAttribute('src', 'https://www.google.es/maps/place/Five+Guys/@38.8687664,-77.1465025,18z/data=!3m2!4b1!5s0x89b7b4631d7078c1:0x7edf0a3a97ed0175!4m5!3m4!1s0x89b7b4631dfbb2ff:0xdcec5bf488e11a82!8m2!3d38.8687664!4d-77.1454082')
+    const mapContact = document.createElement('div');
+    mapContact.innerHTML = '<iframe width="400" height="400" src="https://maps.google.com/maps?q=Five%20Guys%20Enterprises%2C%20LLC%2010718%20Richmond%20Highway%2C%20Lorton%2C%20VA%2022079%20USAncisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>';
     mapContact.className = 'mapContact';
+    mapContact.id = 'map';
 
     const textContact = document.createElement('p');
     textContact.className = 'textContact';
-    textContact.textContent = 'Many places around the world.\n\
+    textContact.innerText = 'We are in many places around the world.\n\
     Just put "five guys" in google search box.\n\
     Five Guys Enterprises, LLC 10718 Richmond Highway,\n\
-    Lorton, VA 22079 USA.\n\
-    866-345-GUYS (4897)';
+    Lorton, VA 22079 USA.\n866-345-GUYS (4897)';
 
     divContact.appendChild(mapContact);
     divContact.appendChild(textContact);
     mainContent.appendChild(divContact);
-    
-}
+};
