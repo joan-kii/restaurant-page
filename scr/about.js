@@ -5,7 +5,7 @@ export function about() {
         divAbout.className = 'divAbout';
 
         const imageAbout = document.createElement('img');
-        imageAbout.setAttribute('src', '../scr/images/five-guys.jpg');
+        imageAbout.setAttribute('src', './images/five-guys.jpg');
         imageAbout.className = 'imageAbout';
 
         const textAbout = document.createElement('p');

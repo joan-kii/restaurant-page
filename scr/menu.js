@@ -7,7 +7,7 @@ export function menu() {
     const menuGreasy = document.createElement('div');
     menuGreasy.className = 'menuGreasy';
     const imageGreasy = document.createElement('img');
-    imageGreasy.setAttribute('src', '../scr/images/greasy-burguer.jpg');
+    imageGreasy.setAttribute('src', './images/greasy-burguer.jpg');
     imageGreasy.setAttribute('width', '400px');
     imageGreasy.className = 'imageGreasy';
     menuGreasy.appendChild(imageGreasy);
@@ -19,7 +19,7 @@ export function menu() {
     const menuSuperGreasy = document.createElement('div');
     menuSuperGreasy.className = 'menuSuperGreasy';
     const imageSuperGreasy = document.createElement('img');
-    imageSuperGreasy.setAttribute('src', '../scr/images/super-greasy-burguer.jpg');
+    imageSuperGreasy.setAttribute('src', './images/super-greasy-burguer.jpg');
     imageSuperGreasy.setAttribute('width', '400px');
     imageSuperGreasy.className = 'imageSuperGreasy';
     menuSuperGreasy.appendChild(imageSuperGreasy);
@@ -31,7 +31,7 @@ export function menu() {
     const menuVegan = document.createElement('div');
     menuVegan.className = 'menuVegan';
     const imageVegan = document.createElement('img');
-    imageVegan.setAttribute('src', '../scr/images/vegan-burguer.jpg');
+    imageVegan.setAttribute('src', './images/vegan-burguer.jpg');
     imageVegan.setAttribute('width', '400px');
     imageVegan.className = 'imageVegan';
     menuVegan.appendChild(imageVegan);
