@@ -1,0 +1,2 @@
+Ejercicio de The Odin Project que consta de una web de resturante que utiliza Webpack para crear e importar/exportar módulos que se 
+renderizan en un "div". Puedes visitarla [aquí]("https://joan-kii.github.io/restaurant-page/").
