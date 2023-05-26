@@ -1,2 +1,9 @@
-Ejercicio de The Odin Project que consta de una web de resturante que utiliza Webpack para crear e importar/exportar módulos que se 
-renderizan en un "div". Puedes visitarla [aquí](https://joan-kii.github.io/restaurant-page/).
+## [Live Demo](https://joan-kii.github.io/restaurant-page/)
+
+## Overview
+This is an exercise for The Odin Project's JavaScript path. A fake restaurant web site.
+
+## Built with
+  - HTML
+  - CSS
+  - JavaScript
